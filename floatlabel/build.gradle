@@ -10,19 +10,17 @@ repositories {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:+'
-
     provided 'com.jakewharton.espresso:espresso:1.1-r2'
     androidTestCompile 'com.jakewharton.espresso:espresso:1.1-r2'
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19"
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
 
     defaultConfig {
         minSdkVersion 8
-        targetSdkVersion 19
+        targetSdkVersion 20
 
         versionCode versionMajor * 10000 + versionMinor * 1000 + versionPatch * 100 + versionBuild
         versionName "${versionMajor}.${versionMinor}" + ((versionPatch != 0) ? ".${versionPatch}" : "")
@@ -37,3 +35,5 @@ android {
         }
     }
 }
+
+apply from: 'https://raw.githubusercontent.com/jpardogo/gradle-mvn-push/master/gradle-mvn-push.gradle'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FloatingLabel"/>
+
+    <style name="FloatingLabel.Label" parent="android:Theme">
+        <item name="flStyle">@style/FloatingLabelStyleDefault</item>
+    </style>
+
+    <style name="FloatingLabelStyleDefault">
+        <item name="mainLayout">@layout/weddingparty_floatlabel_edittext</item>
+    </style>
+
+</resources>

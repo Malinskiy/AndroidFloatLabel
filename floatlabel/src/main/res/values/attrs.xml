@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <declare-styleable name="StyledFloatingLabel">
+        <attr name="flStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingLabelStyle">
+        <attr name="mainLayout" format="reference"/>
+    </declare-styleable>
+
     <declare-styleable name="FloatLabelEditText">
         <attr name="fitScreenWidth" format="enum">
             <enum name="full" value="1"/>

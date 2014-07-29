@@ -88,9 +88,14 @@ public class FloatLabelEditText extends LinearLayout {
             return;
         }
 
+        final TypedArray a = mContext.getTheme()
+                                          .obtainStyledAttributes(null, R.styleable.FloatLabelEditText, R.attr.flStyle, 0);
+        int layoutId = a.getResourceId(R.styleable.FloatingLabelStyle_mainLayout, R.layout.weddingparty_floatlabel_edittext);
+        a.recycle();
+
         LayoutInflater mInflater =
                 (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mInflater.inflate(R.layout.weddingparty_floatlabel_edittext, this, true);
+        mInflater.inflate(layoutId, this, true);
 
         mFloatingLabel = (TextView) findViewById(R.id.floating_label_hint);
         mEditTextView = (EditText) findViewById(R.id.floating_label_edit_text);
