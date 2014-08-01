@@ -89,7 +89,7 @@ public class FloatLabelEditText extends LinearLayout {
         }
 
         final TypedArray a = mContext.getTheme()
-                                          .obtainStyledAttributes(null, R.styleable.FloatLabelEditText, R.attr.flStyle, 0);
+                                          .obtainStyledAttributes(null, R.styleable.FloatingLabelStyle, R.attr.flStyle, 0);
         int layoutId = a.getResourceId(R.styleable.FloatingLabelStyle_mainLayout, R.layout.weddingparty_floatlabel_edittext);
         a.recycle();
 
